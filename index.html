@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="./bootstrap5/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="othello.css">
+
+    <title>オセロ</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <header class="m-5">
+            <h2>オセロでCPUと対戦！！</h2>
+        </header>
+        <div class="container d-flex position-relative">
+
+        <input class="position-absolute bottom-0 start-0 btn btn-success mx-auto"type="button" value="最初からやり直す" onclick="window.location.reload();" />
+            <div id="board" class="mx-auto"></div>
+            <div id="counter" class="card position-absolute bottom-0 end-0">
+                <div class="card-body">
+                    <div class="card-title fs-3">現在の状況</div>
+                    <div id="blackNum" class="card-text fs-4">黒：2</div>
+                    <div id="whiteNum" class="card-text fs-4">白：2</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./bootstrap5/js/bootstrap.bundle.min.js"></script>
+    <script src="othello.js"></script>
+</body>
+
+</html>
